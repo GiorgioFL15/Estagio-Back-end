@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">>
+  <head>
+    <title>Estágio</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8"> 
+  </head>
+  <body>
+        <div class="box">
+          <form action="">
+            <fieldset>
+              <legend><b>Formulário Carros</b></legend>
+                <br>
+
+                <div class="inputBox">
+                  <input type="text" nome="nome" id="nome" class = inputUser required>
+                  <label for="nome" class= "labelinput">Nome</label>
+                </div>
+                <br>
+
+                <div class="inputBox">
+                  <input type="text" name="text" id="text" class = inputUser required>
+                  <label for="text" class= "labelinput">Marca</label>
+                </div>
+                <br>
+
+                <div class="inputBox">
+                  <input type="text" name= "modelo" id="modelo" class = inputUser required>
+                  <label for="modelo" class= "labelinput">Modelo</label>
+                </div>
+                <br>
+
+                  
+                    <label for="data_fabricacao"><b>Data de Fabricação</b></label>
+                    <input type="date" name= "data_fabricacao" id="data_fabricacao" required>
+                  <br><br>
+
+                  <div class="inputBox">
+                    <input type="text" name= "preco" id="preco" class = inputUser required>
+                    <label for="estado" class= "labelinput">Preço</label>
+                  </div>
+                  <br>
+
+                  <div class="inputBox">
+                    <input type="text" name= "cor" id="cor" class = inputUser required>
+                    <label for="cor" class= "labelinput">Cor</label>
+                  </div>
+                  <br>
+                  
+                    <input type="submit" name="submit" id="submit">
+                   
+            </fieldset>
+          </form>
+        </div>
+     
+       <div class = "global">
+        <div class = "box-excluir">
+          <fieldset>
+            <legend><b>Excluir Carros</b></legend>
+            <form>
+
+             
+              <div class = "inputBox" >
+                <input type="text" name= "id" id="id" class= "inputUser" required>
+                <label for="id" class= "labelinput">ID do veiculo</label>
+                
+             </div>
+             <input type="submit" name="submit" class ="submit" id ="submit" value="Excluir">
+            </form>
+          </fieldset>
+        </div>
+
+        <div class = "box-alterar">
+          <fieldset>
+            <legend><b>Atualizar Carro</b></legend>
+            <form>
+
+             
+              <div class = "inputBox" >
+                <input type="text" name= "id" id="id" class= "inputUser" required>
+                <label for="id" class= "labelinput">ID do veiculo</label>
+                
+             </div>
+             <input type="submit" name="submit" class ="submit" id ="submit" value="Alterar">
+            </form>
+          </fieldset>
+        </div>
+
+
+        <div class = "box-pesquisa">
+          <fieldset>
+            <legend><b>Pesquisar Carro</b></legend>
+            <form>
+
+             
+              <div class = "inputBox" >
+                <input type="text" name= "Modelo" id="Modelo" class= "inputUser" required>
+                <label for="Modelo" class= "labelinput">Modelo do veiculo</label>
+                
+             </div>
+             <input type="submit" name="submit" class ="submit" id ="submit" value="Pesquisar">
+            </form>
+          </fieldset>
+        </div>
+      </div> 
+
+
+     
+
+        <div class = "my-container">
+            <div class = "my-item">
+                Nome
+            </div>
+            
+            <div class = "my-item">
+               Marca
+            </div>
+    
+            <div class = "my-item">
+               Modelo
+            </div>
+    
+            <div class = "my-item">
+               Ano
+            </div>
+    
+            <div class = "my-item">
+                Preço
+            </div>
+            
+            <div class = "my-item">
+               Cor
+            </div>
+    
+
+    
+        </div>
+  </body>
+</html>
